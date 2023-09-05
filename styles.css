@@ -1,5 +1,536 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Overpass', sans-serif;
+}
+
+.Blogr-header {
+    background-color: hsl(355, 100%, 74%);
+    height: 500px;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    border-radius: 0px 0px 0px 60px;
+}
+
+.section-img{
+    position: absolute;
+    width: 150%;
+    z-index: -2;
+    top: -700px;
+    left: -200px;
+}
+
+.header {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.blogr h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    padding-top: 10px;
+    display: flex;
+    list-style-type: none;
+    margin-right: 100px;
+}
+
+.navbar ul select {
+    border: none;
+    margin-right: 70px;
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.sign {
+    display: flex;
+    margin-top: 10px;
+}
+
+.sign h4 {
+    color: hsl(0, 0%, 100%);
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.button-one {
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: hsl(353, 100%, 62%);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.mobile-icon,
+.mobileIcon, .x-icon {
+    display: none;
+}
+
+.Main-one h3 {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 50px;
+}
+
+.Main-one p {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.button-two {
+    text-align: center;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 50px;
+    color: hsl(353, 100%, 62%);
+    background-color: hsl(0, 0%, 100%);
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button-two:hover {
+    background-color: hsl(355, 100%, 74%);
+    border: 1px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+}
+
+.Blogr-main-one {
+    z-index: 3;
+    position: relative;
+    background: #fff;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.Blogr-main-one h2 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(208, 49%, 24%);
+}
+
+.Main-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editor {
+    margin-top: 60px;
+    padding-right: 50px;
+}
+
+.editor h4 {
+    color: hsl(208, 49%, 24%);
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.editor p {
+    color: hsl(207, 13%, 34%);
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.sub-div img {
+    width: 500px;
+}
+
+.Blogr-main-two {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(237, 17%, 21%);
+    height: 300px;
+}
+
+.Main-three {
+    background-image: url(./IMAGES/bg-pattern-circles.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Main-three img {
+    width: 350px;
+}
+
+.Main-four {
+    margin-top: 60px;
+    padding-left: 50px;
+}
+
+.Main-four h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.Main-four p {
+    color: hsl(240, 2%, 79%);
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.Blogr-main-three {
+    background-color: hsl(240, 10%, 16%);
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 250px;
+}
+
+.Footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer h1 {
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+.Main-five {
+    display: flex;
+}
+
+.Footer-nav {
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.Footer-nav h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.Footer-nav ul {
+    margin-top: 20px;
+
+}
+
+.Footer-nav ul li {
+    cursor: pointer;
+    text-align: center;
+    list-style-type: none;
+    margin-top: 10px;
+    color: hsl(240, 2%, 79%);
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.active{
+    border-bottom: 2px solid grey;
+    color: #fff;
+}
+
+@media(max-width: 990px) {
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .section-img{
+        position: absolute;
+        width: 250%;
+        z-index: -2;
+        top: -169px;
+        left: -227px;
+    }
+
+    .blogr h2 {
+        color: hsl(0, 0%, 100%);
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .navbar ul {
+        display: block;
+        margin-right: 0px;
+    }
+
+    .mobile-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .x-icon{
+        display: flex;
+        cursor: pointer;
+        justify-content: end
+    }
+
+    .select-div{
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .mobileIcon {
+        display: none;
+    }
+
+    .navbar ul select {
+        margin-top: 15px;
+        list-style-type: none;
+        font-size: 12px;
+        font-weight: 400;
+        cursor: pointer;
+        margin-right: 0px;
+    }
+
+    .navbar {
+        display: none !important;
+        position: absolute;
+        padding: 10px;
+        background-color: hsl(355, 100%, 74%);
+        width: 93%;
+        top: 0px;
+        height: 40%;
+    }
+
+    .add-navbar{
+        display: block !important;
+    }
+
+    .remove-navbar{
+        display: none !important;
+    }
+
+    .sign {
+        display: grid;
+        margin-top: 0;
+    }
+
+    .sign h4 {
+        margin-top: 10px;
+        color: hsl(0, 0%, 100%);
+        margin-right: 0px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .button-one {
+        width: 70px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding: 5px 0px;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        color: hsl(353, 100%, 62%);
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .Main-one h3 {
+        text-align: center;
+        color: hsl(0, 0%, 100%);
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .Main-one p {
+        text-align: center;
+        color: hsl(0, 0%, 100%);
+        font-size: 10px;
+        margin-top: 10px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .Blogr-main-one {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 40px;
+    }
+
+    .Blogr-main-one h2 {
+        text-align: center;
+        padding-bottom: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        color: hsl(208, 49%, 24%);
+    }
+
+    .Main-two {
+        display: grid;
+    }
+
+    .editor {
+        text-align: center;
+        margin-top: 20px;
+        padding-right: 0px;
+    }
+
+    .editor h4 {
+        text-align: center;
+        color: hsl(208, 49%, 24%);
+        padding-bottom: 20px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .editor p {
+        text-align: center;
+        color: hsl(207, 13%, 34%);
+        font-size: 10px;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .sub-div img {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .Blogr-main-two {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: grid;
+        background-color: hsl(237, 17%, 21%);
+        height: 550px;
+        margin-top: 20px;
+    }
+
+    .Main-three {
+        background-image: url(./IMAGES/bg-pattern-circles.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .Main-three img {
+        width: 100%;
+    }
+
+    .Main-four {
+        margin-top: 0px;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .Main-four h2 {
+        color: hsl(0, 0%, 100%);
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .Main-four p {
+        text-align: center;
+        color: hsl(240, 2%, 79%);
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 10px;
+        font-weight: 400;
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+
+    .Blogr-main-three {
+        background-color: hsl(240, 10%, 16%);
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 20px;
+        height: 550px;
+    }
+
+    .Footer {
+        display: grid;
+        justify-content: center;
+    }
+
+    .Footer h1 {
+        margin-top: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%);
+    }
+
+    .Main-five {
+        display: grid;
+    }
+
+    .Footer-nav {
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+    .Footer-nav h2 {
+        color: hsl(0, 0%, 100%);
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .Footer-nav ul {
+        margin-top: 10px;
+
+    }
+
+    .Footer-nav ul li {
+
+        list-style-type: none;
+        margin-top: 10px;
+        color: hsl(240, 2%, 79%);
+        font-size: 12px;
+        font-weight: 500;
+    }
 }
